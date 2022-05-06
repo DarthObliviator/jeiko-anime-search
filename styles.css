@@ -1,0 +1,130 @@
+body{
+    background-color: #a47148;
+    color: #ffe6a7;
+}
+*{
+    font-family:verdana,tahoma,sans-serif;
+    font-family: 'Aladin', cursive;
+    margin: 0;
+}
+
+main{
+    margin: 2%;
+}
+
+ header{
+     background-color: #432818;
+     height: 10vh;
+     display: flex;
+     flex-direction: row;
+    justify-content: space-around;
+ }
+ 
+ header h1{
+     margin: 10px 5px;
+     color:yellow;
+     text-align:center;
+     font-size:50px;
+ }
+ 
+ #backgroundImage{
+     height: 20vh;
+     text-align: center;
+     border-bottom: 1px solid black;
+ }
+
+ #status{
+     font-style: italic;
+     height:32px;
+ }
+ 
+ .result {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 200px;
+    float:left;
+    border:1px solid gray;
+    padding:5px;
+    margin-left: 2.5%;
+    margin-bottom:10px;
+    background-color: #6f1d1b;
+    border-radius: 10%;
+}
+
+.result img {
+    position: absolute;
+    left: 7.5%;
+    bottom: 7.5%;
+    bottom: 10px;
+    display:block;
+    width: 85%;
+    box-shadow: 0px 15px 17px -8px rgba(0, 0, 0, 0.6);
+    z-index: 0;
+    border-radius: 10%;
+    object-fit:fill;
+}
+
+.result p{
+    z-index: 1;
+    
+}
+
+.result span{
+    font-size:12px;
+    font-weight:bold;
+    display:block;
+}
+
+.result audio{
+    width: 130px;
+}
+
+button{
+  display : inline-block;
+  cursor : pointer;
+
+  border-style : solid;
+  border-width : 1px;
+  border-radius : 50px;
+  padding : 10px 18px;
+  box-shadow : 0 1px 4px rgba(0,0,0,.6);
+  font-size : 14pt;
+  font-weight : bold;
+  color : #fff;
+  text-shadow : 0 1px 3px rgba(0,0,0,.4);
+}
+
+button.green{
+    border-color: #8fc800;
+      background: #8fc800;
+      background: linear-gradient(top, #8fc800 0%,#438c00 100%);
+}
+
+button:hover{
+    background: #ad2831;
+}
+
+button:active{
+    background: #8fFF00;
+    box-shadow : 0 0 6px rgba(0,0,0,.6);
+}
+
+button:focus {outline:0;}
+
+.widgets{
+    margin-top: 1em;
+    margin-bottom:1em;
+}
+
+
+/* makes the images wrap around the border and stretch*/
+
+#content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+

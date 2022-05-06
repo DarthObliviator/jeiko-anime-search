@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+ 	<title>JIKAN Anime Search</title>
+	 <link rel="stylesheet" href = "styles.css">
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	 <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet"> 
+	 <script src = "main.js"></script>
+</head>
+<body>
+<header>
+	<h1>JIKAN Anime Search</h1>
+	<p>Uses JIKAN MYANIMELIST API</p>
+</header>
+
+<div id = "backgroundImage">
+	<p>Imaginary background image goes here</p>
+</div>
+<main>
+<section id = "searchBar">
+<div class="widgets">
+	Search Term -> 
+	<input id="searchTerm" type="text" size="20" maxlength="20" autofocus value="Naruto" />
+</div>
+
+<div id = "widgets">
+	<label for = "searchType">Choose what to search for:</label>
+	<select name = "searchType" id = "searchSelect">
+		<option value = "title">Title</option>
+		<option value = "character">Character</option>
+		<option value = "episode">Episode</option>
+	</select>
+</div>
+
+<div class="widgets">
+	<button type="button" id="search" class="green">Search For Anime</button>
+	<input type="checkbox" id = "nsfw" name = "nsfw" value = "Allow NSFW 18+ results">
+	<label for = "nsfw">Allow NSFW 18+ results</label> 
+</div>
+<div id="status">Ready to Search!</div>
+<hr>
+</section>
+
+<section id = "results">
+<h2>Results</h2>
+<div id="content">
+	<p>No data yet!</p>
+</div>
+</section>
+</main>
+
+</body>
+</html>
